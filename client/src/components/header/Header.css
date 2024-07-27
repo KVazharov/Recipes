@@ -1,0 +1,131 @@
+.site-header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #035a5a;
+}
+
+.fa-solid {
+    padding-right: 0.75rem;
+}
+
+.header-container {
+    padding: 1rem;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-hader-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav nav ul {
+    display: flex;
+    gap: 2rem
+}
+
+.login-register-nav nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+.user-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.user-nav nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center;
+    padding: 2rem;
+    /* font-size: 3rem; */
+    color: rgba(12, 12, 12, 0.866);
+
+}
+
+.fa-solid {
+    color: white;
+
+}
+
+.search {
+    padding-left: 0.5rem;
+}
+section {
+    padding-bottom: 1.5rem;
+}
+
+.most-popular-list {
+    width: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.recipe {
+    width: 17rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+h3 {
+    padding: 1rem 0.5rem;
+}
+
+img {
+    width: 17rem;
+    height: auto;
+}
+
+.recipe a:hover {
+    box-shadow: 5px 8px rgb(220, 172, 83);
+}
+
+.category {
+    padding: 1rem 0;
+}
+.category ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.category ul li a {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.category ul li a:hover {
+    text-decoration: underline;
+}

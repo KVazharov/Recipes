@@ -1,0 +1,53 @@
+footer {
+    min-width: 100vw;
+    background-color: #035a5a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* position: fixed; */
+    bottom: 0;
+
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.8;
+}
+
+
+.links {
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-us,
+.account,
+.social {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 5rem;
+    width: 20rem;
+    height: 6rem;
+
+}
+
+.contact-us ul li,
+.account ul li a,
+.social ul li a {
+    font-size: 0.7rem;
+    padding: 0.1rem 0;
+    
+}
+
+.copy-rights {
+    font-size: 0.8rem;
+    padding-top: 0.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
