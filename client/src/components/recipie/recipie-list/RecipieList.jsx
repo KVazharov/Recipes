@@ -16,10 +16,10 @@ export default function RecipiesList() {
     }, [])
 
     return (
-        
             <div className="list">
-                {recipes.map(recipie => <RecipieListItem key={recipie._id} {...recipie} />)}
+                {recipes.length > 0 ?
+                recipes.map(recipie => <RecipieListItem key={recipie._id} {...recipie} />) :
+                <div className="no-recipes">No Recipes Found</div>}
             </div>
-    
     )
 }
