@@ -14,6 +14,7 @@ import Regsiter from './components/user/register/Regsiter'
 import Logout from './components/user/Logout'
 import AddRecipie from './components/recipie/add-recipie/AddRecipie'
 import RecipiesList from './components/recipie/recipie-list/RecipieList'
+import NotFound from './components/not-found/NotFound'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
 						<Route path='/logout' element={<Logout />} />
 						<Route path='/recipes' element={<RecipiesList/>}/>
 						<Route path='/add-recipie' element={<AddRecipie />} />
+
+						<Route path='*' element={<NotFound/>} />
 
 					</Routes>
 				</main>
