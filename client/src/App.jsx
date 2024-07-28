@@ -13,6 +13,7 @@ import Login from './components/user/login/Login'
 import Regsiter from './components/user/register/Regsiter'
 import Logout from './components/user/Logout'
 import AddRecipie from './components/recipie/add-recipie/AddRecipie'
+import RecipiesList from './components/recipie/recipie-list/RecipieList'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
 						<Route path='/login' element={<Login />} />
 						<Route path='/register' element={<Regsiter />} />
 						<Route path='/logout' element={<Logout />} />
+						<Route path='/recipes' element={<RecipiesList/>}/>
 						<Route path='/add-recipie' element={<AddRecipie />} />
 
 					</Routes>

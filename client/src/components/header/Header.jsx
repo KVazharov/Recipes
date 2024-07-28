@@ -12,7 +12,7 @@ export default function Header() {
 					<Link to="#">
 						<i className="fa-solid fa-magnifying-glass "></i>
 					</Link>
-					<Link to="#">Recipes</Link>
+					<Link to="/recipes">Recipes</Link>
 				</div>
 				<nav>
 					<div className="header-container">

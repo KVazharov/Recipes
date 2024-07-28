@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 
 import './AddRecipie.css'
 
-import addRecipie from "../../../api/recipesService";
+import * as recipesAPI from "../../../api/recipesService";
 import useAddRecipie from "../../../hooks/useAddRecipie";
 
 
@@ -20,7 +20,9 @@ export default function AddRecipie() {
 
     const formSubmitHandler = async (e) => {
         e.preventDefault();
-        const result = await addRecipie(addRecipieFormValues);
+
+         const result = await recipesAPI.addRecipie(addRecipieFormValues);
+        // const result = await addRecipie(addRecipieFormValues);
          // TODO: change path to recipe/id/details
         navigate('/');
     }
@@ -46,7 +48,7 @@ export default function AddRecipie() {
                     <option value="---">---</option>
                     <option value="salads">Salads</option>
                     <option value="bbq">BBQ</option>
-                    <option value="socktails">Socktails</option>
+                    <option value="cocktails">Cocktails</option>
                     <option value="soups">Soups</option>
                     <option value="burgers">Burgers</option>
                     <option value="dessert">Dessert</option>

@@ -1341,15 +1341,97 @@
         }
     };
     var seedData = {
-        recipes: {
-            "3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
-                image: "https://www.savorynothings.com/shopska-salad/",
-                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                name: "Shopska Salad",
-                ingredients: "smaller tomatoes, cucumbers, large green pepper, large red pepper",
-                preperation: "I use smaller tomatoes so there are less seeds (mine are just a bit bigger than a golf ball – they should yield about 1.5 pounds). If you only have large tomatoes, make sure to de-seed them or the salad will be watery",
-                _createdOn: 1613551279012
+        recipes: {         
+          "8fe132e2-f955-4aaa-926a-c610d3839760":  {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/quinoa-spinach23.webp0543438b-ac1e-4449-a47f-30ce16c2afc5?alt=media&token=d6284fe3-45f1-47d0-ba69-13c4f8ca0e82",
+                category: "salads",
+                name: "Salad with quinoa and mozzarella sticks",
+                igredients: "quinoa - 55 years\nspinach - 50 years\nZucchini - 1/2 pc., roasted, small\nmaple syrup - 1 tbsp.,\nmustard - 1 tsp.,\npepper,\nolive oil - 2 tbsp.,\ngarlic powder,\ntomatoes - 1 pc., pink, small,\nvinegar - or lemon,\nmozzarella sticks - 5 pcs.,\nhot peppers - 1 pc.",
+                preperaion: "To start, wash and boil the quinoa in a ratio of 1:3, quinoa to water, in a saucepan over medium heat.\n\nWash and chop the spinach into smaller pieces and place it in a salad plate or bowl.\n\nCut the washed tomato into small pieces and add it to the spinach together with the cooled, cooked quinoa and the roasted zucchini.\n\nWe make a dressing from the maple syrup, olive oil, mustard, vinegar, black pepper, garlic powder and salt. Pour the prepared dressing over the quinoa salad and mix well with a spoon.\n\nPlace the baked mozzarella sticks and a hot pepper on top of the spinach salad .\n\nHave a sweet tooth with quinoa salad and mozzarella sticks !",
+                _createdOn: 1722178867344,
+                _id: "8fe132e2-f955-4aaa-926a-c610d3839760"
             },
+           "d02f3431-babf-414a-926a-95709eb1610c": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/salatatikvichkimorkovi34.webpc7962713-fedc-40b1-b4d4-50bfd1521dfd?alt=media&token=9c14e648-8696-4df6-8ad2-f9c4a5ce94c9",
+                category: "salads",
+                name: "Zucchini and carrot salad",
+                igredients: "Zucchini - 2,\ncarrots - 1 pc.,\nсол - 1 с.л.,\nsugar - 1 tsp.,\nolive oil - 1 tbsp. oil,\nоцет - 1 с.л.,\ngarlic - 1 clove crushed,\nfennel,\nparsley,",
+                preperaion: "I cut the zucchini into cubes or first into four lengthwise, then into smaller cubes.\n\nI grated carrots and mixed them in a bowl. I sprinkled with the salt and let them stand like that for an hour, stirring them from time to time.\n\nAfter an hour I drained without washing them.\n\nI added the rest of the products and mixed very well.\n\nParsley, dill and garlic quantities to your taste. Zucchini salad is great and different from the standard tomato and cucumber salad.\n\nAnd with this carrot salad, you can always improvise with the products.\n\nThe salad with zucchini and carrots turned out to be very tasty ! I have a similar recipe for winter food in a compote jar, so I decided to improvise for the summer!",
+                _createdOn: 1722179051152,
+                _id: "d02f3431-babf-414a-926a-95709eb1610c"
+            },
+             "ec6b5310-7317-442b-b7e8-13e8442e14a0": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/plodovasalata-kiselomlqko.webp151c734c-7cea-48ae-a94d-0e498d774ea1?alt=media&token=e89fb573-47ca-419f-a67f-b4d9fcb849dd",
+                category: "salads",
+                name: "Fruit salad with yogurt",
+                igredients: "yogurt - 150 g of fruit,\nmixed forest fruits - 100 g + cherries,\npastry cream - 2 tbsp. broken,",
+                preperaion: "Fruit salad with yogurt - a delicious and fresh dessert, loved by the whole family.\n\nPut the yogurt at the bottom of a glass or bowl. Arrange the washed and dried fruits on top. If your fruit seems too sour, you can pour a spoonful of honey over it.\n\nWe put two spoons of whipped pastry cream on them and finish with the rest of the fruits.\n\nDecorate the fruit salad with mint leaves and serve.",
+                _createdOn: 1722179154170,
+                _id: "ec6b5310-7317-442b-b7e8-13e8442e14a0"
+            },
+           "24c2f51a-413a-4742-a90f-8a6f01d106f2": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/bezglutenova-salata-elda-domati.webpe98f3d8e-707f-4b67-b889-729f9a3c5bca?alt=media&token=f35f006f-e533-4e76-ad01-544a0939f0bc",
+                category: "salads",
+                name: "Gluten-free salad with buckwheat and tomatoes",
+                igredients: "elda - 1/2 tsp.,\ntomatoes - 2 pcs.,\ndried tomatoes - 6 - 8 pcs. (from a jar),\navocado - 1 pc. (large),\nparsley - 1/2 link,\ncheese - 40 g (gluten-free),\nCharlan - 3 - 4 tbsp.,",
+                preperaion: "Wash the buckwheat for this gluten-free recipe , boil it in 1 tsp. salted water for about 20 minutes and let cool.\n\nPeel the avocado and cut it into cubes.\n\nCut the tomatoes into pieces.\n\nPut the buckwheat, avocado, tomatoes and finely chopped parsley in a bowl.\n\nAdd the charlan and mix gently.\n\nSprinkle the buckwheat salad with the crumbled cheese and serve.\n\nThe gluten-free salad with buckwheat and tomatoes is very tasty and health",
+                _createdOn: 1722179239592,
+                _id: "24c2f51a-413a-4742-a90f-8a6f01d106f2"
+            },
+           "c9270127-8e87-4fed-96d0-c8b137937ab5": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/pineapple-mint-cocktail.webp2bdcb10b-2bb9-4695-b8b0-b720457c0657?alt=media&token=e1c110ff-ab48-4194-8f3a-0727f9d78ab3",
+                category: "cocktails",
+                name: "The Zombie Boy Cocktail",
+                igredients: "ice - crushed,\ndark rum - 100 ml,\nwhite rum - 100 ml,\ngolden rum - 50 ml,\ntriple sec - 50 ml liqueur,\nlemon juice - 50 ml,\norange juice - 50 ml,\npineapple juice - 50 ml,\nmango nectar - 50 ml,\ngrenadine - 1 tbsp.,\norgeat syrup - 1 tbsp.,\nfeather - 1 tsp.,\nmint - sprigs of fresh,\npineapple - slices for decoration,",
+                preperaion: "For the most part, it is the same as the Original Zombie cocktail , but with some subtle differences.\n\nWe put the ice in the blender and add the three types of rum , triple sec liqueur, the three types of juice, mango nectar, grenadine, orgeat syrup and feather.\n\nWe start the machine and wait for it to become a smooth mixture.\n\nPour without stirring into chilled Collins glasses and garnish with the sprigs of fresh mint and the pineapple slices.\n\nTry the great taste of the Zombie Boy cocktail .",
+                _createdOn: 1722179361613,
+                _id: "c9270127-8e87-4fed-96d0-c8b137937ab5"
+            },
+           "1d74d37a-4d10-4d6e-8d22-eb81ae14ccf0": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/choco-cheesecake1.webpa13ac7a8-9694-428e-b7bf-37fe9e7e8646?alt=media&token=47e38df6-51f8-4fc3-994e-fa0e942ff350",
+                category: "dessert",
+                name: "Easy 5-Ingredient No-Bake Chocolate Cheesecake",
+                igredients: "For the swamps: \nbutter butter - 50 g at room temperature,\nbiscuits - 150 - 200 g tea,\nfor the cream,\nliquid chocolate - 400 g Nuleta,\ncream cheese - 250 g Philadelphia,\nmascarpone - 200 g,",
+                preperaion: "For the toppings for this irresistible cheesecake, put the biscuits in a blender or crush them with a hammer and mix them with the butter, mixing well. You should be able to make balls out of this mixture.\n\nWhen you have already obtained the desired effect, put in a shape, if possible round and press evenly with the palm of your hand until it becomes an even sponge.\n\nThen put in the freezer for half an hour, during this time put the mascarpone, Nutella and cream cheese in a large bowl and beat well with a mixer or a whisk until you get a smooth and homogeneous mixture.\n\nRemove the marshmallows and put the mixture inside, spreading it evenly with a spoon, then leave it overnight in the fridge and your chocolate cheesecake is ready.\n\nYou can decorate as desired with slivered almonds, berries, mint or grated chocolate.\n\nBon Appetite :)\n\nTry this easy chocolate cheesecake with 5 ingredients without baking . Quick, easy and delicious!",
+                _createdOn: 1722183341674,
+                _id: "1d74d37a-4d10-4d6e-8d22-eb81ae14ccf0"
+            },
+           "a9ce73ff-dc69-41eb-8abb-58c406718fc2": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/smetanov-sladoledd2.webpe9179942-f41d-4d2c-887a-e695a0fe9209?alt=media&token=bde7ff97-ca31-44a2-9036-0ea86a8aeade",
+                category: "dessert",
+                name: "Creamy ice cream without eggs",
+                igredients: "cream - 300 g, 36% fat content,\nfresh milk - 400 ml,\ncream powder for coffee - 40 g,\nsugar - 100 g,\nstarch - 14 years,\nvanilla - optional,",
+                preperaion: "Mix 50 ml of milk and the starch in a bowl.\n\nIn a saucepan, mix the sugar, coffee creamer and 100 ml of milk.\n\nThen add the rest of the milk, stir and put on the stove.\n\nAfter the milk boils, add the stirred starch and cook for about 3-5 minutes.\n\nStrain the mixture through a strainer, cool and refrigerate for at least 1 hour.\n\nWhip the cream, add the cooled mixture and mix with a spatula.\n\nPour the ice cream mixture into the ice cream maker for about 40 min.\n\nTransfer the finished cream ice cream to a suitable container and put it in the freezer for about 1-2 hours.",
+                _createdOn: 1722183400911,
+                _id: "a9ce73ff-dc69-41eb-8abb-58c406718fc2"
+            },
+            "3f89c226-5363-4cc0-ab6d-7b795be0fd93": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/kremsupatikvichki34.webp01f909e8-60f8-4689-a732-9084970d4980?alt=media&token=f329fc4d-fb5f-4105-b9d0-10c6e98ead6f",
+                category: "soups",
+                name: "Zucchini cream soup with poached egg",
+                igredients: "Zucchini - 800 g,\nonion - 1/2 head,\ngarlic - 3 cloves,\nolive oil - 40 ml,\ncow butter - 30 g,\ncream cheese - 100 g,\nwater - about 400 ml,\nfresh milk - 100 ml,\nvegetable broth - 1/2 cube,\npepper,\nsalt,\neggs - 4 pcs.,\ncroutons - optional (or toast),\nparsley - dried, for sprinkling",
+                preperaion: "Remove the ends of the courgettes , wash them and cut them into medium-sized pieces.\n\nClean and chop the onion and garlic and sauté them in olive oil until soft.\n\nAdd the zucchini, salt to taste, the crushed broth and the water. In general, you don't need to add a lot of water, if the soup is cooked under a lid, the vegetables will soften and cook well.\n\nThe amount of water also depends on your preference for how thick you like the cream of zucchini soup to be .\n\nCook for about 20-25 minutes.\n\nAdd the cream cheese, butter, black pepper and fresh milk and blend until smooth.\n\nIf desired, you can dilute the vegetable soup with more milk or water, or vice versa - thicken it with more cream cheese.\n\nPoach the eggs in a pot of water on the stove. The water should not boil violently to keep them whole. An easy way is to tear off four pieces of cling film, spread an egg in the middle of each one, gathering the cling film into a bundle.\n\nEach bundle is dropped into the hot water (almost ready to boil or already boiling, it doesn't matter in this method) without submerging completely.\n\nWhen you see that the white has turned white, you can remove the eggs to keep the yolk soft.\n\nDivide the zucchini cream between 4 medium deep plates or bowls. Top with one egg per serving and serve with toast or croutons. Sprinkle with dried parsley.\n\nSometimes I serve the cream of zucchini soup with a poached egg and two eggs per serving, depending on whether it's for lunch or dinner.",
+                _createdOn: 1722183500516,
+                _id: "3f89c226-5363-4cc0-ab6d-7b795be0fd93"
+            },
+           "7b1b1f6f-a2f9-40c2-bdf9-17f6c0072989": {
+                _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/domashen-teleshki-burger.webpdfbd6fd1-1689-4b0d-98f3-474b8892271e?alt=media&token=b2cd1bcd-2730-4c61-b4c8-cb0c10d65c09",
+                category: "burgers",
+                name: "Homemade beef burger with melted cheese",
+                igredients: "For the bread rolls\nfresh milk - 200 ml,\noil - 50 g,\nYeast - 1 cube,\nsalt - 1 tbsp.,\nsugar - 1 pinch,\nflour - as much as it takes,\nseeds - for sprinkling,\noil - for the pan,\nFor the burgers,\nbeef - 400 - 500 g,\neggs - 1 pc.,\nonion - 1 large head,,\nparsley,\npepper,\nsalt,\nred pepper - a pinch,\ncumin,\noil - for the pan,\nFor garnish,\nprocessed cheese - 200 g,\npeppers - 2 pcs. yellow and red,\nsoy sauce,\nonion - 1 head,\npickles - 5 - 6 pcs.,\ncheese - 50 g,\nlettuce - 5 leaves",
+                preperaion: "Breads: Warm the milk and dissolve the yeast and butter in it, add flour, salt and sugar, knead a soft dough and let it rise. After the dough is ready, divide it into balls, shape them into balls, arrange them in an oiled pan and let them rise again. After they have risen, sprinkle them with seeds and bake at 180-200 degrees until done.\n\nWhile the buns are baking, we prepare the burgers . Cut the meat into large cubes and pour into a chopper, add the cleaned and coarsely chopped onion, chop the parsley and grind for 1 min. or according to how fine we want the meat to be.\n\nThen we take the meat out of the chopper in a bowl, season with the spices , beat the egg and mix well. Heat the fat in a pan (enough to cover the bottom), then take some of the minced meat with your hands , shape it and put it in the pan, do the same with the rest of the mixture. After it is baked, turn to the other side.\n\nAfter finishing the burgers, put the thinly sliced ​​peppers and onions in the same fat, add 1-2 tablespoons of soy sauce and stew for 1-2 minutes. After they are stewed, remove them from the pan.\n\nWhen the bread, meat and vegetables are ready, we split the buns in the middle, spread with melted cheese , put thinly sliced ​​cucumbers , the burger, thinly sliced ​​cheese, the stewed vegetables, a leaf of lettuce, cucumbers again and finally the other part of the bun, which we also spread with melted cheese.",
+                _createdOn: 1722183633639,
+                _id: "7b1b1f6f-a2f9-40c2-bdf9-17f6c0072989"
+            }
         }
     };
     var rules$1 = {
