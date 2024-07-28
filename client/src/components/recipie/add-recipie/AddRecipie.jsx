@@ -1,37 +1,41 @@
-import { useState } from "react"
+import { useNavigate } from 'react-router-dom'
+
 import './AddRecipie.css'
+
 import addRecipie from "../../../api/recipesService";
+import useAddRecipie from "../../../hooks/useAddRecipie";
+
 
 export default function AddRecipie() {
-
-    const [addRecipieFormValues, setAddRecipieFormValues] = useState({
-        images: '',
+   
+    const navigate = useNavigate()
+    const [addRecipieFormValues, changeHandler, handleImageUpload] = useAddRecipie({
+        image: '',
         category: '',
         name: '',
         igredients: '',
         preperaion: '',
     })
-    
+
+
     const formSubmitHandler = async (e) => {
         e.preventDefault();
-        addRecipie(addRecipieFormValues)
+        const result = await addRecipie(addRecipieFormValues);
+         // TODO: change path to recipe/id/details
+        navigate('/');
     }
 
-    
-    const changeHandler = (e) => {
-
-        setAddRecipieFormValues(oldValues => ({
-            ...oldValues,
-            [e.target.name]: e.target.value,
-        }))
-
-    }
     return (
         <div className="add-recipe" >
             <form className="add-form" onSubmit={formSubmitHandler}>
                 <h3>Add recipie</h3>
-                <label htmlFor="images"></label>
-                <input type="file" id="file" />
+                <label htmlFor="image"></label>
+                <input
+                    type="file"
+                    name='image'
+                    id="file"
+                    onChange={handleImageUpload}
+                />
                 <label htmlFor="category" id="category">Category:
                 </label>
                 <select
@@ -49,7 +53,7 @@ export default function AddRecipie() {
                 </select>
                 <label htmlFor="name">Recipie name</label>
                 <input
-                name="name"
+                    name="name"
                     type="text"
                     id="name"
                     value={addRecipieFormValues.name}
