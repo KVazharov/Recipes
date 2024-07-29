@@ -30,7 +30,7 @@ export default function AddRecipie() {
     return (
         <div className="add-recipe" >
             <form className="add-form" onSubmit={formSubmitHandler}>
-                <h3>Add recipie</h3>
+                <h3>Add recipe</h3>
                 <label htmlFor="image"></label>
                 <input
                     type="file"

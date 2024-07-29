@@ -2,9 +2,7 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
-import  { AuthProvider } from './contexts/authContext'
-
-
+import { AuthProvider } from './contexts/authContext'
 
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
@@ -16,7 +14,8 @@ import AddRecipie from './components/recipie/add-recipie/AddRecipie'
 import RecipiesList from './components/recipie/recipie-list/RecipieList'
 import NotFound from './components/not-found/NotFound'
 import RecipieDetails from './components/recipie/recipie-details/RecipieDetails'
-
+import ProtectedRoutes from './util/ProtectedRoutes'
+import PublicRoutes from './util/PublicRoutes'
 function App() {
 
 	return (
@@ -26,15 +25,20 @@ function App() {
 				<main>
 					<Routes>
 						<Route path='/' element={<Home />} />
-						<Route path='/login' element={<Login />} />
-						<Route path='/register' element={<Regsiter />} />
-						<Route path='/logout' element={<Logout />} />
-						<Route path='/recipes' element={<RecipiesList/>}/>
-						<Route path='/add-recipie' element={<AddRecipie />} />
+						<Route path='/recipes' element={<RecipiesList />} />
 						<Route path='/recipes/:recipieId/details' element={<RecipieDetails />} />
 
-						<Route path='*' element={<NotFound/>} />
+						<Route element={<PublicRoutes />}>
+							<Route path='/register' element={<Regsiter />} />
+							<Route path='/login' element={<Login />} />
+						</Route>
 
+						<Route element={<ProtectedRoutes />}>
+							<Route path='/add-recipie' element={<AddRecipie />} />
+							<Route path='/logout' element={<Logout />} />
+						</Route>
+
+						<Route path='*' element={<NotFound />} />
 					</Routes>
 				</main>
 				<Footer />
