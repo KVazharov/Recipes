@@ -12,9 +12,15 @@ export const getAll = async () => {
     return result;
 }
 
+export const getOne = async (recipieId) => {
+    const result = await request.get(`${baseUrl}/${recipieId}`);
+    return result;
+}
+
 const recipesAPI = {
     addRecipie,
-    getAll
+    getAll,
+    getOne
 }
 
 export default recipesAPI

@@ -14,7 +14,7 @@ export default function AddRecipie() {
         category: '',
         name: '',
         igredients: '',
-        preperaion: '',
+        preparation: '',
     })
 
 
@@ -74,11 +74,11 @@ export default function AddRecipie() {
 
                 <label htmlFor="preperaion">Preparation</label>
                 <textarea
-                    name="preperaion"
+                    name="preparation"
                     id="preperaion"
                     cols="15"
                     rows="10"
-                    value={addRecipieFormValues.preperaion}
+                    value={addRecipieFormValues.preparation}
                     onChange={changeHandler}
                 ></textarea>
 
