@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import useForm from "../../../hooks/useForm";
 
 import AuthContext from "../../../contexts/authContext";
+import loginValidation from "../../../validation/loginValidation";
 import './Login.css';
-import { Link } from "react-router-dom";
-import loginValidation from "../../../validation/validation";
 
 export default function Login() {
 
@@ -21,6 +21,7 @@ export default function Login() {
     useEffect(() => {
 
         if (!initialRender) {
+            console.log(Object.keys(errors).length !== 0);
             setIsDisabled(Object.keys(errors).length !== 0);
             setErrors(loginValidation(formValues));
         }
