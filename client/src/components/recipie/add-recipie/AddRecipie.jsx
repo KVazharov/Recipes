@@ -1,14 +1,21 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 import './AddRecipie.css'
 
 import * as recipesAPI from "../../../api/recipesService";
 import useAddRecipie from "../../../hooks/useAddRecipie";
+import { useEffect, useState } from 'react';
+import AddRecipeValidation from '../../../validation/addRecipeValidation';
 
 
 export default function AddRecipie() {
-   
+
+    const { recipieId } = useParams();
     const navigate = useNavigate()
+
+    const [errors, setErrors] = useState({});
+    const [isDisabled, setIsDisabled] = useState(true);
+    const [initialRender, setInitialRender] = useState(true);
     const [addRecipieFormValues, changeHandler, handleImageUpload] = useAddRecipie({
         image: '',
         category: '',
@@ -17,15 +24,30 @@ export default function AddRecipie() {
         preparation: '',
     })
 
-
     const formSubmitHandler = async (e) => {
         e.preventDefault();
 
-         const result = await recipesAPI.addRecipie(addRecipieFormValues);
-        // const result = await addRecipie(addRecipieFormValues);
-         // TODO: change path to recipe/id/details
-        navigate('/');
+        try {
+            const result = await recipesAPI.addRecipie(addRecipieFormValues);
+            navigate(`/recipes/${result._id}/details`);
+        } catch (err) {
+            console.log(err.message);
+        }
+        
+              
     }
+
+    useEffect(() => {
+
+        if (!initialRender) {
+        
+            setIsDisabled(Object.keys(errors).length !== 0);
+            setErrors(AddRecipeValidation(addRecipieFormValues));
+        }
+        setInitialRender(false);
+
+    }, [addRecipieFormValues, isDisabled]);
+
 
     return (
         <div className="add-recipe" >
@@ -38,6 +60,7 @@ export default function AddRecipie() {
                     id="file"
                     onChange={handleImageUpload}
                 />
+                {errors.image && <span className="error">{errors.image}</span>}
                 <label htmlFor="category" id="category">Category:
                 </label>
                 <select
@@ -53,6 +76,7 @@ export default function AddRecipie() {
                     <option value="burgers">Burgers</option>
                     <option value="dessert">Dessert</option>
                 </select>
+                {errors.category && <span className="error">{errors.category}</span>}
                 <label htmlFor="name">Recipie name</label>
                 <input
                     name="name"
@@ -61,7 +85,7 @@ export default function AddRecipie() {
                     value={addRecipieFormValues.name}
                     onChange={changeHandler}
                 />
-
+                {errors.name && <span className="error">{errors.name}</span>}
                 <label htmlFor="igredients">Igredients</label>
                 <textarea
                     name="igredients"
@@ -71,7 +95,7 @@ export default function AddRecipie() {
                     value={addRecipieFormValues.igredients}
                     onChange={changeHandler}
                 ></textarea>
-
+                {errors.igredients && <span className="error">{errors.igredients}</span>}
                 <label htmlFor="preperaion">Preparation</label>
                 <textarea
                     name="preparation"
@@ -81,10 +105,10 @@ export default function AddRecipie() {
                     value={addRecipieFormValues.preparation}
                     onChange={changeHandler}
                 ></textarea>
-
+                {errors.preparation && <span className="error">{errors.preparation}</span>}
                 <div className="btns">
-                    <button className="cancle-btn">Cancle</button>
-                    <button className="add-btn" type="submit">Add</button>
+                    <button className="cancle-btn" onClick={()=> navigate('/')}>Cancle</button>
+                    <button className="add-btn" disabled={isDisabled} type="submit">Add</button>
                 </div>
             </form>
         </div>

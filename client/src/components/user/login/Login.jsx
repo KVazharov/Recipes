@@ -21,9 +21,10 @@ export default function Login() {
     useEffect(() => {
 
         if (!initialRender) {
-            console.log(Object.keys(errors).length !== 0);
+
             setIsDisabled(Object.keys(errors).length !== 0);
             setErrors(loginValidation(formValues));
+            
         }
         setInitialRender(false);
 

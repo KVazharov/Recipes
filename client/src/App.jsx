@@ -14,8 +14,8 @@ import AddRecipie from './components/recipie/add-recipie/AddRecipie'
 import RecipiesList from './components/recipie/recipie-list/RecipieList'
 import NotFound from './components/not-found/NotFound'
 import RecipieDetails from './components/recipie/recipie-details/RecipieDetails'
-import ProtectedRoutes from './util/ProtectedRoutes'
-import PublicRoutes from './util/PublicRoutes'
+import ProtectedRoutes from './route-guard/ProtectedRoutes'
+import PublicRoutes from './route-guard/PublicRoutes'
 function App() {
 
 	return (

@@ -3,7 +3,7 @@
 .details {
     text-align: left;
     padding: 2rem;
-    width: 900px;
+    width: 800px;
     font-family: 'Open Sans' ;
   
 }
@@ -12,12 +12,21 @@
     font-size: 2rem;
 }
 .details img {
-    width: 900px;
-    height: auto;
+    width: 800px;
+    height: 450px;
+}
+.igredients h3, .preparation h3 {
+    text-align: left;
+    padding: 1rem;
+    margin-left: 2rem;
 }
 .igredients ul {
-    padding: 2rem 0;
+    padding-left: 4rem;
+    line-height: 1.5;
+}
+.igredients ul li {
     text-align: left;
+    list-style: disc;
 }
 
 .igredients ul li {
@@ -38,4 +47,8 @@
 .recipie-bar i {
     color: black;
     padding: 2.5rem 3rem;
+}
+
+a .fa-solid:hover {
+   color: #035a5a ;
 }

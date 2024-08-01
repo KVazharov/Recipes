@@ -5,6 +5,8 @@ const baseUrl = 'http://localhost:3030/data/recipes'
 export const addRecipie = async (values) => {
 
     const response = await request.post(baseUrl, values);
+
+    return response;
 }
 
 export const getAll = async () => {
