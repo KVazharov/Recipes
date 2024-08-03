@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-export default function useForm(submitHandler, initialValues) {
+export default function useEdit(initialValues, submitHandler) {
     const [formValues, setFormValues] = useState(initialValues);
- 
+
+    useEffect(() => {
+        setFormValues(initialValues);
+    }, [initialValues])
 
     const onChangeHandler = (e) => {
         setFormValues(oldState => ({
@@ -15,6 +18,8 @@ export default function useForm(submitHandler, initialValues) {
     const onSubmit = (e) => {
         e.preventDefault();
         submitHandler(formValues);
+        setFormValues(initialValues);
+
     }
 
 

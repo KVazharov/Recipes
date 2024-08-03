@@ -4,10 +4,10 @@ import { useState } from "react"
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import { storage } from "../firebase"
 import { v4 } from 'uuid'
-
 export default function useAddRecipie(initialValues) {
     const [addRecipieFormValues, setAddRecipieFormValues] = useState(initialValues);
-
+    
+    console.log(addRecipieFormValues);
     const changeHandler = (e) => {
         setAddRecipieFormValues(oldValues => ({
             ...oldValues,

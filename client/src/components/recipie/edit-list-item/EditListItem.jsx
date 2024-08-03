@@ -7,6 +7,8 @@ export default function EditListItem({
     _id,
     name
 }) {
+
+  
     return (
             <div className="edit-list">
                 <div className="edit-recipe">

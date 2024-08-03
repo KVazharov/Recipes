@@ -18,6 +18,9 @@ export const getOne = async (recipieId) => {
     const result = await request.get(`${baseUrl}/${recipieId}`);
     return result;
 }
+export const update = async (recipeId, data) => {
+    await request.put(`${baseUrl}/${recipeId}`, data)
+}
 
 export const getLatest = async () => {
 
@@ -26,9 +29,9 @@ export const getLatest = async () => {
         pageSize: 3,
     });
     const urlParams = urlSearchParams.toString().replace('+', '%20')
-    
+
     const result = await request.get(`${baseUrl}?${urlParams}`);
-    
+
     const latestRecipes = Object.values(result);
 
     return latestRecipes;
@@ -39,6 +42,7 @@ const recipesAPI = {
     getAll,
     getOne,
     getLatest,
+    update,
 }
 
 export default recipesAPI

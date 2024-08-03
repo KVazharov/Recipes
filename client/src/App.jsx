@@ -17,6 +17,7 @@ import RecipieDetails from './components/recipie/recipie-details/RecipieDetails'
 import ProtectedRoutes from './route-guard/ProtectedRoutes'
 import PublicRoutes from './route-guard/PublicRoutes'
 import MyRecipes from './components/recipie/my-recipes/MyRecipes'
+import EditRecipe from './components/recipie/edit-recipe/EditRecipe'
 function App() {
 
 	return (
@@ -37,6 +38,7 @@ function App() {
 						<Route element={<ProtectedRoutes />}>
 							<Route path='/add-recipie' element={<AddRecipie />} />
 							<Route path='/my-recipes' element={<MyRecipes />} />
+							<Route path='/recipes/:recipieId/edit' element={<EditRecipe />} />
 							<Route path='/logout' element={<Logout />} />
 						</Route>
 

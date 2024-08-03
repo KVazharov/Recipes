@@ -1,5 +1,5 @@
 
-export default function addRecipeValidation(values) {
+export default function editRecipeValidation(values) {
 
     let validationErrors = {};
 
@@ -9,7 +9,7 @@ export default function addRecipeValidation(values) {
     if (!values.name) {
         validationErrors.name = 'Field is required!';
     }
-    if (values.category == '---' || values.category =='') {
+    if (values.category == '---' || values.category == '') {
         validationErrors.category = 'Field is required!';
     }
 
@@ -22,7 +22,6 @@ export default function addRecipeValidation(values) {
     }
     
     
-    console.log(validationErrors);
     return validationErrors;
 }
 

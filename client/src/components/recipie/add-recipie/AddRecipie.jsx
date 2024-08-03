@@ -5,7 +5,7 @@ import './AddRecipie.css'
 import * as recipesAPI from "../../../api/recipesService";
 import useAddRecipie from "../../../hooks/useAddRecipie";
 import { useEffect, useState } from 'react';
-import AddRecipeValidation from '../../../validation/addRecipeValidation';
+import addRecipeValidation from '../../../validation/addRecipeValidation';
 
 
 export default function AddRecipie() {
@@ -42,7 +42,7 @@ export default function AddRecipie() {
         if (!initialRender) {
         
             setIsDisabled(Object.keys(errors).length !== 0);
-            setErrors(AddRecipeValidation(addRecipieFormValues));
+            setErrors(addRecipeValidation(addRecipieFormValues));
         }
         setInitialRender(false);
 

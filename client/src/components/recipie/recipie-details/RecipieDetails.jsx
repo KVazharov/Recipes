@@ -30,7 +30,7 @@ export default function RecipieDetails() {
             <h2>{recipe.name}</h2>
             <img src={recipe.image} alt="" />
             <div className="recipie-bar">
-                {isAuthenticated && <NavLink  to="#"><i class="fa-solid fa-heart fa-2xl" ></i></NavLink>}
+                {isAuthenticated && <NavLink  to="#"><i className="fa-solid fa-heart fa-2xl" ></i></NavLink>}
 
             </div>
             <div className="igredients">
