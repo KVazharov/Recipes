@@ -49,6 +49,9 @@
     padding: 2.5rem 3rem;
 }
 
-a .fa-solid:hover {
+.recipie-bar a .fa-solid {
+    color: rgb(104, 103, 103);
+}
+.recipie-bar a .fa-solid:hover {
    color: #035a5a ;
 }

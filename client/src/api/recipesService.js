@@ -19,10 +19,26 @@ export const getOne = async (recipieId) => {
     return result;
 }
 
+export const getLatest = async () => {
+
+    const urlSearchParams = new URLSearchParams({
+        sortBy: '_createdOn desc',
+        pageSize: 3,
+    });
+    const urlParams = urlSearchParams.toString().replace('+', '%20')
+    
+    const result = await request.get(`${baseUrl}?${urlParams}`);
+    
+    const latestRecipes = Object.values(result);
+
+    return latestRecipes;
+}
+
 const recipesAPI = {
     addRecipie,
     getAll,
-    getOne
+    getOne,
+    getLatest,
 }
 
 export default recipesAPI

@@ -25,7 +25,7 @@ export const AuthProvider = ({
             navigate('/');
 
         } catch (err) {
-
+            console.log(err.message);
         }
 
     };

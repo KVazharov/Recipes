@@ -33,13 +33,16 @@ export default function Header() {
 							<nav>
 								<ul>
 									<li>
-										<Link to="#">{username}'s' Profile</Link>
+										<Link to="#"> Hello, {username}</Link>
 									</li>
 									<li>
 										<Link to="/add-recipie">Add Recipe</Link>
 									</li>
 									<li>
-										<Link to="#">Favorites</Link>
+										<Link to="/favorites">Favorites</Link>
+									</li>
+									<li>
+									<Link to="/my-recipes">My recipes</Link>
 									</li>
 									<li>
 										<Link to="/logout">Logout</Link>

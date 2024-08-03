@@ -6,9 +6,11 @@ import * as recipesAPI from '../../../api/recipesService';
 import RecipieListItem from "../recipieListItem/RecipieListItem";
 import Spinner from "../../spinner/Spinner";
 
+
 export default function RecipiesList() {
     const [recipes, setRecipes] = useState([]);
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(true);
+   
 
     useEffect(() => {
         (async () => {
