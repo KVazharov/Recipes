@@ -22,6 +22,10 @@ export const update = async (recipeId, data) => {
     await request.put(`${baseUrl}/${recipeId}`, data)
 }
 
+const remove = async (id) => {
+
+    await request.del(`${baseUrl}/${id}`)
+}
 export const getLatest = async () => {
 
     const urlSearchParams = new URLSearchParams({
@@ -43,6 +47,7 @@ const recipesAPI = {
     getOne,
     getLatest,
     update,
+    remove
 }
 
 export default recipesAPI

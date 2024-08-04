@@ -21,8 +21,6 @@ export default function addRecipeValidation(values) {
         validationErrors.preparation = 'Field is required!';
     }
     
-    
-    console.log(validationErrors);
     return validationErrors;
 }
 
