@@ -1341,8 +1341,8 @@
         }
     };
     var seedData = {
-        recipes: {         
-          "8fe132e2-f955-4aaa-926a-c610d3839760":  {
+        recipes: {
+            "8fe132e2-f955-4aaa-926a-c610d3839760": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/quinoa-spinach23.webp0543438b-ac1e-4449-a47f-30ce16c2afc5?alt=media&token=d6284fe3-45f1-47d0-ba69-13c4f8ca0e82",
                 category: "salads",
@@ -1352,7 +1352,7 @@
                 _createdOn: 1722178867344,
                 _id: "8fe132e2-f955-4aaa-926a-c610d3839760"
             },
-           "d02f3431-babf-414a-926a-95709eb1610c": {
+            "d02f3431-babf-414a-926a-95709eb1610c": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/salatatikvichkimorkovi34.webpc7962713-fedc-40b1-b4d4-50bfd1521dfd?alt=media&token=9c14e648-8696-4df6-8ad2-f9c4a5ce94c9",
                 category: "salads",
@@ -1362,7 +1362,7 @@
                 _createdOn: 1722179051152,
                 _id: "d02f3431-babf-414a-926a-95709eb1610c"
             },
-             "ec6b5310-7317-442b-b7e8-13e8442e14a0": {
+            "ec6b5310-7317-442b-b7e8-13e8442e14a0": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/plodovasalata-kiselomlqko.webp151c734c-7cea-48ae-a94d-0e498d774ea1?alt=media&token=e89fb573-47ca-419f-a67f-b4d9fcb849dd",
                 category: "salads",
@@ -1372,7 +1372,7 @@
                 _createdOn: 1722179154170,
                 _id: "ec6b5310-7317-442b-b7e8-13e8442e14a0"
             },
-           "24c2f51a-413a-4742-a90f-8a6f01d106f2": {
+            "24c2f51a-413a-4742-a90f-8a6f01d106f2": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/bezglutenova-salata-elda-domati.webpe98f3d8e-707f-4b67-b889-729f9a3c5bca?alt=media&token=f35f006f-e533-4e76-ad01-544a0939f0bc",
                 category: "salads",
@@ -1382,7 +1382,7 @@
                 _createdOn: 1722179239592,
                 _id: "24c2f51a-413a-4742-a90f-8a6f01d106f2"
             },
-           "c9270127-8e87-4fed-96d0-c8b137937ab5": {
+            "c9270127-8e87-4fed-96d0-c8b137937ab5": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/pineapple-mint-cocktail.webp2bdcb10b-2bb9-4695-b8b0-b720457c0657?alt=media&token=e1c110ff-ab48-4194-8f3a-0727f9d78ab3",
                 category: "cocktails",
@@ -1392,7 +1392,7 @@
                 _createdOn: 1722179361613,
                 _id: "c9270127-8e87-4fed-96d0-c8b137937ab5"
             },
-           "1d74d37a-4d10-4d6e-8d22-eb81ae14ccf0": {
+            "1d74d37a-4d10-4d6e-8d22-eb81ae14ccf0": {
                 _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/choco-cheesecake1.webpa13ac7a8-9694-428e-b7bf-37fe9e7e8646?alt=media&token=47e38df6-51f8-4fc3-994e-fa0e942ff350",
                 category: "dessert",
@@ -1402,7 +1402,7 @@
                 _createdOn: 1722183341674,
                 _id: "1d74d37a-4d10-4d6e-8d22-eb81ae14ccf0"
             },
-           "a9ce73ff-dc69-41eb-8abb-58c406718fc2": {
+            "a9ce73ff-dc69-41eb-8abb-58c406718fc2": {
                 _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/smetanov-sladoledd2.webpe9179942-f41d-4d2c-887a-e695a0fe9209?alt=media&token=bde7ff97-ca31-44a2-9036-0ea86a8aeade",
                 category: "dessert",
@@ -1422,7 +1422,7 @@
                 _createdOn: 1722183500516,
                 _id: "3f89c226-5363-4cc0-ab6d-7b795be0fd93"
             },
-           "7b1b1f6f-a2f9-40c2-bdf9-17f6c0072989": {
+            "7b1b1f6f-a2f9-40c2-bdf9-17f6c0072989": {
                 _ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/domashen-teleshki-burger.webpdfbd6fd1-1689-4b0d-98f3-474b8892271e?alt=media&token=b2cd1bcd-2730-4c61-b4c8-cb0c10d65c09",
                 category: "burgers",
@@ -1432,7 +1432,7 @@
                 _createdOn: 1722183633639,
                 _id: "7b1b1f6f-a2f9-40c2-bdf9-17f6c0072989"
             },
-           "42dc1c75-2e72-43a8-a13f-93e22b4ddea9": {
+            "42dc1c75-2e72-43a8-a13f-93e22b4ddea9": {
                 _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/pile-parjoli-chushki-luk.webp919ee950-3f7e-4daa-9892-f1e9d20ec4f3?alt=media&token=5338a5af-6f1b-458c-946f-2afda19e1ac5",
                 category: "bbq",
@@ -1442,8 +1442,24 @@
                 _createdOn: 1722535201080,
                 _id: "42dc1c75-2e72-43a8-a13f-93e22b4ddea9"
             }
+        },
+
+        favorites: {
+            "a1eae995-e7d5-44f6-a296-53bf134cef86": {
+                _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+                pecipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
+                _createdOn: 1722763822538,
+                _id: 'a1eae995-e7d5-44f6-a296-53bf134cef86'
+            },
+            "be78b856-3c79-4dc9-82c5-14938ec66641": {
+                _ownerId: '43671516-526f-4b62-94f2-62612b6eaea6',
+                pecipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
+                _createdOn: 1722763981539,
+                _id: 'be78b856-3c79-4dc9-82c5-14938ec66641'
+            }
         }
     };
+
     var rules$1 = {
         users: {
             ".create": false,

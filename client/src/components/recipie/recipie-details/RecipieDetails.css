@@ -45,13 +45,20 @@
 }
 
 .recipie-bar i {
-    color: black;
     padding: 2.5rem 3rem;
 }
+.fa-solid{
+    color: #035a5a ;
+}
 
-.recipie-bar a .fa-solid {
-    color: rgb(104, 103, 103);
+.fa-solid:hover {
+   color: #035a5a ;
+   cursor: pointer;
 }
 .recipie-bar a .fa-solid:hover {
-   color: #035a5a ;
+    color: #035a5a ;
+ }
+
+i .inactive-link {
+    color: gray;
 }
