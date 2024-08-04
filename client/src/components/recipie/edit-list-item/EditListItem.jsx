@@ -9,17 +9,16 @@ export default function EditListItem({
     _id,
     name
 }) {
-    const [showModal, setShowModal] = useState(false);
-
     const [confirm, setComfirm] = useState(false);
 
     const onCancel = () => {
-        setComfirm(true);
+        setComfirm(false);
     }
 
     const onDelete = () => {
         setComfirm(true);
     }
+
     return (
         <>
             {confirm && <ConfirmDelete onCancel={onCancel} id={_id} name={name} />}

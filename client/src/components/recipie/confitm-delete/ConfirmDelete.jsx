@@ -26,7 +26,6 @@ export default function ConfirmDelete({
                     <p className="confirmation-message">
                         Are you sure you want to delete </p>
                     <p className='recipe-title'>{name}</p>
-
                     <div className="button-container">
                         <button id="cancelBtn"
                             onClick={onCancel}
