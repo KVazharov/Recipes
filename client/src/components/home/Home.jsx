@@ -1,5 +1,6 @@
-import MostPopularRecipies from "./most-popular-recipies/MostPopularRecipies";
-import NewesRecipies from "./newest-recipies/NewestRecipies";
+
+import SummerCocktails from "./summer/SummerCocktails";
+import NewestRecipies from "./newest-recipies/NewestRecipies";
 
 import './Home.css'
 
@@ -9,8 +10,8 @@ export default function Home() {
         <>
             <h1>Recipe inspiration</h1>
             <p>Whether you're after an old favourite or inspiration for something new, we have the perfect recipe.</p>
-            <MostPopularRecipies />
-            <NewesRecipies />
+            <SummerCocktails />
+            <NewestRecipies />
         </>
     )
 }

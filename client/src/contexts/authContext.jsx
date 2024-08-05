@@ -13,7 +13,7 @@ export const AuthProvider = ({
 }) => {
 
     const navigate = useNavigate();
-    const [auth, setAuth] = usePersistedState('auth',{});
+    const [auth, setAuth] = usePersistedState('auth', {});
 
 
 
@@ -25,16 +25,25 @@ export const AuthProvider = ({
             navigate('/');
 
         } catch (err) {
-            console.log(err.message);
+            if (err.status == 403) {
+                throw new Error("Wrong Email or Password");
+            }
+            throw new Error('There was an error', err);
         }
-
     };
 
     const registerSubmit = async (values) => {
-        const result = await userAuth.register(values.username, values.email, values.password)
-        setAuth(result);
-        localStorage.setItem('accessToken', result.accessToken);
-        navigate('/');
+        try {
+            const result = await userAuth.register(values.username, values.email, values.password)
+            setAuth(result);
+            localStorage.setItem('accessToken', result.accessToken);
+            navigate('/');
+        } catch (err) {
+            if (err.status == 409) {
+                throw new Error("Incorect Email or Password");
+            }
+            throw new Error('There was an error', err);
+        }
     }
 
     const logoutHandler = () => {

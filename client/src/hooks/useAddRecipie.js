@@ -15,8 +15,8 @@ export default function useAddRecipie(initialValues) {
         }))
     }
     const handleImageUpload = async (e) => {
-
-        const imageUpload = e.target.files[0];
+        try {
+            const imageUpload = e.target.files[0];
 
         if (imageUpload == null) return;
 
@@ -28,6 +28,11 @@ export default function useAddRecipie(initialValues) {
             ...oldValues,
             image: downloadURL,
         }));
+        } catch (err) {
+            
+        }
+        
+        
     }
 
     return [

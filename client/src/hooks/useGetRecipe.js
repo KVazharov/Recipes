@@ -11,7 +11,7 @@ export default function useGetRecipe (recipieId) {
                 const result = await recipesAPI.getOne(recipieId)
                 setRecipe(result);
             } catch (err) { 
-                console.log(err.message);
+                throw new Error('There was an error', err);
                 
             }
         })()

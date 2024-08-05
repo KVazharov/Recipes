@@ -20,7 +20,7 @@ export default function RecipiesList() {
                 setIsLoading(false);
 
             } catch (err) {
-                
+                throw new Error('There was an error', err);
             }
 
         })();

@@ -19,7 +19,7 @@ export const getOne = async (recipieId) => {
     return result;
 }
 export const update = async (recipeId, data) => {
-    await request.put(`${baseUrl}/${recipeId}`, data)
+    await request.put(`${baseUrl}/${recipeId}`, data);
 }
 
 const remove = async (id) => {
@@ -27,13 +27,13 @@ const remove = async (id) => {
     await request.del(`${baseUrl}/${id}`)
 }
 
-export const getByCategory =async (category) => {
+export const getByCategory = async (category) => {
 
     const params = new URLSearchParams({
         where: `category="${category}"`,
-    }) 
+    })
     const result = await request.get(`${baseUrl}?${params.toString()}`);
-    
+
     return result;
 
 }
@@ -52,6 +52,19 @@ export const getLatest = async () => {
     return latestRecipes;
 }
 
+const summerCocktails = async () => {
+    const params = new URLSearchParams({
+        where: `category="cocktails"`,
+        pageSize: 3
+    });
+
+    const result = await request.get(`${baseUrl}?${params.toString()}`);
+
+    return result;
+}
+
+
+
 const recipesAPI = {
     addRecipie,
     getAll,
@@ -59,7 +72,8 @@ const recipesAPI = {
     getLatest,
     update,
     remove,
-    getByCategory
+    getByCategory,
+    summerCocktails
 }
 
 export default recipesAPI

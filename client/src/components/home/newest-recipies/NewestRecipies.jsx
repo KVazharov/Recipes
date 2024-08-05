@@ -11,6 +11,7 @@ export default function NewestRecipies() {
         (async () => {
             try {
                 const result = await recipesAPI.getLatest();
+                console.log("latest", result);
                 setLatest(result);
             } catch (err) {
                 console.log(err.message);

@@ -19,38 +19,41 @@ import PublicRoutes from './route-guard/PublicRoutes'
 import MyRecipes from './components/recipie/my-recipes/MyRecipes'
 import EditRecipe from './components/recipie/edit-recipe/EditRecipe'
 import CategoryComponet from './components/recipie/category-component/CategoryComponet'
+import ErrorBoundary from './components/ErrorBoundary'
+
 
 function App() {
 
 	return (
 		<>
-			<AuthProvider >
-				<Header />
-				<main>
-					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/recipes' element={<RecipiesList />} />
-						<Route path='/recipes/:recipieId/details' element={<RecipieDetails />} />
-						<Route path='/category/:category' element={<CategoryComponet />} />
-					
-						<Route element={<PublicRoutes />}>
-							<Route path='/register' element={<Regsiter />} />
-							<Route path='/login' element={<Login />} />
-						</Route>
+		<ErrorBoundary> 
+				<AuthProvider  >
+					<Header/>
+					<main>
+						<Routes>
+							<Route path='/' element={<Home />} />
+							<Route path='/recipes' element={<RecipiesList />} />
+							<Route path='/recipes/:recipieId/details' element={<RecipieDetails />} />
+							<Route path='/category/:category' element={<CategoryComponet />} />
 
-						<Route element={<ProtectedRoutes />}>
-							<Route path='/add-recipie' element={<AddRecipie />} />
-							<Route path='/my-recipes' element={<MyRecipes />} />
-							<Route path='/recipes/:recipieId/edit' element={<EditRecipe />} />
-							<Route path='/logout' element={<Logout />} />
-						</Route>
+							<Route element={<PublicRoutes />}>
+								<Route path='/register' element={<Regsiter />} />
+								<Route path='/login' element={<Login />} />
+							</Route>
 
-						<Route path='*' element={<NotFound />} />
-					</Routes>
-				</main>
-				<Footer />
+							<Route element={<ProtectedRoutes />}>
+								<Route path='/add-recipie' element={<AddRecipie />} />
+								<Route path='/my-recipes' element={<MyRecipes />} />
+								<Route path='/recipes/:recipieId/edit' element={<EditRecipe />} />
+								<Route path='/logout' element={<Logout />} />
+							</Route>
 
-			</AuthProvider>
+							<Route path='*' element={<NotFound />} />
+						</Routes>
+					</main>
+					<Footer />
+				</AuthProvider>
+				</ErrorBoundary>
 		</>
 	)
 }

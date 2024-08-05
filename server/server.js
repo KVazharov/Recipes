@@ -1349,7 +1349,7 @@
                 name: "Salad with quinoa and mozzarella sticks",
                 igredients: "quinoa - 55 years, spinach - 50 years, Zucchini - 1/2 pc., roasted, small maple syrup - 1 tbsp., mustard - 1 tsp.,, pepper,, olive oil - 2 tbsp.,, garlic powder,, tomatoes - 1 pc., pink, small,, vinegar - or lemon,, mozzarella sticks - 5 pcs.,, hot peppers - 1 pc.",
                 preparation: "To start, wash and boil the quinoa in a ratio of 1:3, quinoa to water, in a saucepan over medium heat., , Wash and chop the spinach into smaller pieces and place it in a salad plate or bowl., , Cut the washed tomato into small pieces and add it to the spinach together with the cooled, cooked quinoa and the roasted zucchini., , We make a dressing from the maple syrup, olive oil, mustard, vinegar, black pepper, garlic powder and salt. Pour the prepared dressing over the quinoa salad and mix well with a spoon., , Place the baked mozzarella sticks and a hot pepper on top of the spinach salad ., , Have a sweet tooth with quinoa salad and mozzarella sticks !",
-                _createdOn: 1722178867344,
+                _createdOn: 1722882441708,
                 _id: "8fe132e2-f955-4aaa-926a-c610d3839760"
             },
             "d02f3431-babf-414a-926a-95709eb1610c": {
@@ -1359,7 +1359,7 @@
                 name: "Zucchini and carrot salad",
                 igredients: "Zucchini - 2, carrots - 1 pc., сол - 1 с.л., sugar - 1 tsp.,, olive oil - 1 tbsp. oil, оцет - 1 с.л., garlic - 1 clove crushed, fennel,, parsley",
                 preparation: "I cut the zucchini into cubes or first into four lengthwise, then into smaller cubes., , I grated carrots and mixed them in a bowl. I sprinkled with the salt and let them stand like that for an hour, stirring them from time to time., , After an hour I drained without washing them., , I added the rest of the products and mixed very well., , Parsley, dill and garlic quantities to your taste. Zucchini salad is great and different from the standard tomato and cucumber salad., , And with this carrot salad, you can always improvise with the products., , The salad with zucchini and carrots turned out to be very tasty ! I have a similar recipe for winter food in a compote jar, so I decided to improvise for the summer!",
-                _createdOn: 1722179051152,
+                _createdOn: 1722882331770,
                 _id: "d02f3431-babf-414a-926a-95709eb1610c"
             },
             "ec6b5310-7317-442b-b7e8-13e8442e14a0": {
@@ -1369,7 +1369,7 @@
                 name: "Fruit salad with yogurt",
                 igredients: "yogurt - 150 g of fruit, mixed forest fruits - 100 g + cherries, pastry cream - 2 tbsp. broken",
                 preparation: "Fruit salad with yogurt - a delicious and fresh dessert, loved by the whole family., , Put the yogurt at the bottom of a glass or bowl. Arrange the washed and dried fruits on top. If your fruit seems too sour, you can pour a spoonful of honey over it., , We put two spoons of whipped pastry cream on them and finish with the rest of the fruits., , Decorate the fruit salad with mint leaves and serve.",
-                _createdOn: 1722179154170,
+                _createdOn: 1722882201923,
                 _id: "ec6b5310-7317-442b-b7e8-13e8442e14a0"
             },
             "24c2f51a-413a-4742-a90f-8a6f01d106f2": {
@@ -1441,6 +1441,36 @@
                 preparation: "Cut the chicken breast in half. Pound the chicken steaks and rub them with salt and pepper., , Fry the meat in heated oil in a pan for about 6 minutes on each side. You can also grill the chicken. Remove the fried meat and cover with foil and keep warm. , , Meanwhile, cut the onion into circles and the peppers, pre-cleaned from the seeds, into thin strips. Finely chop the garlic., , Fry the onion rings, pepper strips and garlic briefly in the chicken pan., , Add the lemon juice and lemon zest and sauté the vegetables for 5 minutes. Return the meat to the pan and pour over the stock., , Cover again and simmer for 10 min. Season with salt and pepper to taste., , Serve the steaks on top of the pepper and onion canapés. If desired, you can add a side dish of rice or homemade sauteed potatoes ., , Chicken breast with onions and peppers is very tasty.",
                 _createdOn: 1722535201080,
                 _id: "42dc1c75-2e72-43a8-a13f-93e22b4ddea9"
+            },
+           "1991d817-30a7-4740-8391-1c88c6cf4333": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/bezalkoholno-mohito.webpebe669f7-ad51-408b-9359-94adca441a8f?alt=media&token=f60dac72-c146-4cd2-8c52-85a0633cff6f",
+                category: "cocktails",
+                name: "Non-alcoholic Mojito",
+                igredients: "powdered sugar - 1.5 tbsp brown, mint - 1 link, lime - 4 pcs., soda - 2 pcs.",
+                preparation: "Crush the mint together with the sugar in a mortar . Place the ice in a tall glass.\n\nSqueeze the juice from the four limes .\n\nDivide equally into three glasses, as well as the mixture of mint and sugar. Add the soda.\n\nPlace a straw and a sprig of mint. ",
+                _createdOn: 1722179154170,
+                _id: "c69256f2-3892-4fbd-a445-fc72a61632b5"
+            },
+           "1991d817-30a7-4740-8391-1c88c6cf4333": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/cocktails80.webp02e3881d-9561-42da-9897-60191f3f9704?alt=media&token=2cdcbb3b-b0e0-4bd1-8186-8f635b45a85d",
+                category: "cocktails",
+                name: "Non-alcoholic apricot cocktail",
+                igredients: "apricots - 500 g, sugar - 2 - 3 tbsp. Brown, raspberry syrup - 6 tbsp., carbonated water - for dilution, ice",
+                preparation: "Wash and pit the apricots.\n\nPut them to stew for 5-6 minutes with the sugar and 1/2 tea cup of water.\n\nAs soon as they soften, remove from the heat and puree to a completely smooth paste.\n\nDivide the apricot puree into glasses. Add 1-2 tbsp. raspberry syrup, add ice and dilute to the top with a little sparkling water.\n\nStir and serve the apricot cocktail with a straw. ",
+                _createdOn: 1722179051152,
+                _id: "1991d817-30a7-4740-8391-1c88c6cf4333"
+            },
+            "56cf18b9-f373-4b3d-ac1d-53ab2e3de592": {
+                _ownerId: "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                image: "https://firebasestorage.googleapis.com/v0/b/recipes-b4913.appspot.com/o/cocktail-coconut-pineapple.webp96aa6093-fab7-47cc-bdfb-8925c5d3ee3c?alt=media&token=5fb2027d-23bf-4305-95f7-481cce87db99",
+                category: "cocktails",
+                name: "Carbonated cocktail with coconut and pineapple",
+                igredients: "coconut milk - 100 ml, coconut syrup - 2 tsp., pineapple juice - 40 ml, ice cream - 100 g, lemon juice - 2 tsp., carbonated water - 1/2 tsp.",
+                preparation: "Put all the ingredients except the sparkling water in the blender and blend.\n\nPour the liquid into a glass, add the sparkling water and stir. ",
+                _createdOn: 1722178867344,
+                _id: "56cf18b9-f373-4b3d-ac1d-53ab2e3de592"
             }
         },
 

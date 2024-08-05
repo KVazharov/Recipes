@@ -15,7 +15,7 @@ export default function useMyPecipes() {
                 setMyRecipes(filtered);
 
             } catch (err) {
-                console.log(err.message);
+                throw new Error('There was an error', err);
             }
         })();
     }, []);

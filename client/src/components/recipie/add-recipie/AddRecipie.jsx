@@ -1,6 +1,6 @@
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom';
 
-import './AddRecipie.css'
+import './AddRecipie.css';
 
 import * as recipesAPI from "../../../api/recipesService";
 import useAddRecipie from "../../../hooks/useAddRecipie";
@@ -31,10 +31,8 @@ export default function AddRecipie() {
             const result = await recipesAPI.addRecipie(addRecipieFormValues);
             navigate(`/recipes/${result._id}/details`);
         } catch (err) {
-            console.log(err.message);
+            throw new Error('There was an error', err);
         }
-        
-              
     }
 
     useEffect(() => {
@@ -48,7 +46,7 @@ export default function AddRecipie() {
 
     }, [addRecipieFormValues, isDisabled]);
 
-
+    console.log('add', errors);
     return (
         <div className="add-recipe" >
             <form className="add-form" onSubmit={formSubmitHandler}>

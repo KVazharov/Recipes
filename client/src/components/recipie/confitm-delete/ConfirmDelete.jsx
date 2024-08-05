@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './ConfirmDelete.css';
 import recipesAPI from '../../../api/recipesService';
 
+
 export default function ConfirmDelete({
     id,
     name,
@@ -15,7 +16,7 @@ export default function ConfirmDelete({
             navigate('/');
 
         } catch (err) {
-            console.log(err.message);
+            throw new Error('There was an error', err);
         }
     }
 

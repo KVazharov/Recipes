@@ -45,7 +45,6 @@ export default function RecipieDetails() {
         try {
             const getOne = await favoritesAPI.getLike(recipieId, userId);
             const likeId = likedId(getOne, userId);
-            // console.log('dasdasdsa', likeId);
             const result = await favoritesAPI.disLike(likeId);
             setIsActive(false);
         } catch (err) {
