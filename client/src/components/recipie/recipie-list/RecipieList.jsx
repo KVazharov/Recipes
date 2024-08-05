@@ -10,13 +10,18 @@ import Spinner from "../../spinner/Spinner";
 export default function RecipiesList() {
     const [recipes, setRecipes] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-   
+
 
     useEffect(() => {
         (async () => {
-            const result = await recipesAPI.getAll();
-            setRecipes(result)
-            setIsLoading(false);
+            try {
+                const result = await recipesAPI.getAll();
+                setRecipes(result)
+                setIsLoading(false);
+
+            } catch (err) {
+                
+            }
 
         })();
     }, [])

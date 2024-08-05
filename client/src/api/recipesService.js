@@ -26,6 +26,17 @@ const remove = async (id) => {
 
     await request.del(`${baseUrl}/${id}`)
 }
+
+export const getByCategory =async (category) => {
+
+    const params = new URLSearchParams({
+        where: `category="${category}"`,
+    }) 
+    const result = await request.get(`${baseUrl}?${params.toString()}`);
+    
+    return result;
+
+}
 export const getLatest = async () => {
 
     const urlSearchParams = new URLSearchParams({
@@ -47,7 +58,8 @@ const recipesAPI = {
     getOne,
     getLatest,
     update,
-    remove
+    remove,
+    getByCategory
 }
 
 export default recipesAPI

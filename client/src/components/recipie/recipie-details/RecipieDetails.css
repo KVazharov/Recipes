@@ -4,26 +4,32 @@
     text-align: left;
     padding: 2rem;
     width: 800px;
-    font-family: 'Open Sans' ;
-  
+    font-family: 'Open Sans';
+
 }
+
 .details h2 {
-    padding-bottom: 1rem ;
+    padding-bottom: 1rem;
     font-size: 2rem;
 }
+
 .details img {
     width: 800px;
     height: 450px;
 }
-.igredients h3, .preparation h3 {
+
+.igredients h3,
+.preparation h3 {
     text-align: left;
     padding: 1rem;
     margin-left: 2rem;
 }
+
 .igredients ul {
     padding-left: 4rem;
     line-height: 1.5;
 }
+
 .igredients ul li {
     text-align: left;
     list-style: disc;
@@ -36,7 +42,7 @@
 
 .preparation p {
     font-size: 1.2rem;
-    text-indent: 3.5rem ;
+    text-indent: 3.5rem;
 }
 
 .recipie-bar {
@@ -47,18 +53,24 @@
 .recipie-bar i {
     padding: 2.5rem 3rem;
 }
-.fa-solid{
-    color: #035a5a ;
-}
 
-.fa-solid:hover {
-   color: #035a5a ;
-   cursor: pointer;
-}
-.recipie-bar a .fa-solid:hover {
-    color: #035a5a ;
- }
-
-i .inactive-link {
+#inactive {
     color: gray;
 }
+
+#active {
+    color: #035a5a;
+}
+
+
+#inactive:hover {
+    color: #035a5a;
+    cursor: pointer;
+}
+
+#active:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+

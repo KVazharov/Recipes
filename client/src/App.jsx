@@ -18,6 +18,8 @@ import ProtectedRoutes from './route-guard/ProtectedRoutes'
 import PublicRoutes from './route-guard/PublicRoutes'
 import MyRecipes from './components/recipie/my-recipes/MyRecipes'
 import EditRecipe from './components/recipie/edit-recipe/EditRecipe'
+import CategoryComponet from './components/recipie/category-component/CategoryComponet'
+
 function App() {
 
 	return (
@@ -29,7 +31,8 @@ function App() {
 						<Route path='/' element={<Home />} />
 						<Route path='/recipes' element={<RecipiesList />} />
 						<Route path='/recipes/:recipieId/details' element={<RecipieDetails />} />
-
+						<Route path='/category/:category' element={<CategoryComponet />} />
+					
 						<Route element={<PublicRoutes />}>
 							<Route path='/register' element={<Regsiter />} />
 							<Route path='/login' element={<Login />} />

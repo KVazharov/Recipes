@@ -42,7 +42,7 @@ export default function Header() {
 										<Link to="/favorites">Favorites</Link>
 									</li>
 									<li>
-									<Link to="/my-recipes">My recipes</Link>
+										<Link to="/my-recipes">My recipes</Link>
 									</li>
 									<li>
 										<Link to="/logout">Logout</Link>
@@ -55,12 +55,24 @@ export default function Header() {
 			</div>
 			<div className="category">
 				<ul>
-					<li><a href="#">Salads</a></li>
-					<li><a href="#">BBQ</a></li>
-					<li><a href="#">Socktails</a></li>
-					<li><a href="#">Soups</a></li>
-					<li><a href="#">Burgers</a></li>
-					<li><a href="#">Dessert</a></li>
+					<li>
+						<Link to="/category/salads">Salads</Link>
+					</li>
+					<li>
+						<Link to="/category/bbq">BBQ</Link>
+					</li>
+					<li>
+						<Link to="/category/cocktails">Cocktails</Link>
+					</li>
+					<li>
+						<Link to="/category/soups">Soups</Link>
+					</li>
+					<li>
+						<Link to="/category/burgers">Burgers</Link>
+					</li>
+					<li>
+						<Link to="/category/dessert">Dessert</Link>
+					</li>
 				</ul>
 			</div>
 		</div>
