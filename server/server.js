@@ -1477,13 +1477,13 @@
         favorites: {
             "a1eae995-e7d5-44f6-a296-53bf134cef86": {
                 _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
-                pecipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
+                recipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
                 _createdOn: 1722763822538,
                 _id: 'a1eae995-e7d5-44f6-a296-53bf134cef86'
             },
             "be78b856-3c79-4dc9-82c5-14938ec66641": {
                 _ownerId: '43671516-526f-4b62-94f2-62612b6eaea6',
-                pecipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
+                recipeId: '8fe132e2-f955-4aaa-926a-c610d3839760',
                 _createdOn: 1722763981539,
                 _id: 'be78b856-3c79-4dc9-82c5-14938ec66641'
             }

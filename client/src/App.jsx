@@ -20,6 +20,7 @@ import MyRecipes from './components/recipie/my-recipes/MyRecipes'
 import EditRecipe from './components/recipie/edit-recipe/EditRecipe'
 import CategoryComponet from './components/recipie/category-component/CategoryComponet'
 import ErrorBoundary from './components/ErrorBoundary'
+import Favorites from './components/favorites/Favorites'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
 		<ErrorBoundary> 
 				<AuthProvider  >
 					<Header/>
+					
 					<main>
 						<Routes>
 							<Route path='/' element={<Home />} />
@@ -44,6 +46,7 @@ function App() {
 							<Route element={<ProtectedRoutes />}>
 								<Route path='/add-recipie' element={<AddRecipie />} />
 								<Route path='/my-recipes' element={<MyRecipes />} />
+								<Route path='/Favorites' element={<Favorites />} />
 								<Route path='/recipes/:recipieId/edit' element={<EditRecipe />} />
 								<Route path='/logout' element={<Logout />} />
 							</Route>

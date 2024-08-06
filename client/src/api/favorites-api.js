@@ -1,22 +1,21 @@
-
 import request from "./request";
 
 const baseUrl = 'http://localhost:3030/data/favorites';
 
-const like = async (pecipeId) => {
-    const result = await request.post(baseUrl, { pecipeId });
+const like = async (recipeId) => {
+    const result = await request.post(baseUrl, { recipeId });
     return result;
 
 }
 
 const disLike = async (likesId) => {
-    // console.log("API", likesId);
+
     const result = await request.del(`${baseUrl}/${likesId}`);
 }
 
 const isLiked = async (recipeId) => {
     const params = new URLSearchParams({
-        where: `pecipeId="${recipeId}"`
+        where: `recipeId="${recipeId}"`
     });
 
     const result = await request.get(`${baseUrl}?${params.toString()}`);
@@ -26,10 +25,18 @@ const isLiked = async (recipeId) => {
 
 export const getLike = async (recipeId, userId) => {
     const params = new URLSearchParams({
-        where: `pecipeId="${recipeId}"`,
-        // load: `_ownerId="${userId}":users`
+        where: `recipeId="${recipeId}"`
     });
 
+    const result = await request.get(`${baseUrl}?${params.toString()}`);
+
+    return result;
+}
+
+export const favorites = async (userId) => {
+    const params = new URLSearchParams({
+        where: `_ownerId="${userId}"`
+    })
     const result = await request.get(`${baseUrl}?${params.toString()}`);
 
     return result;
@@ -39,7 +46,9 @@ const favoritesAPI = {
     like,
     isLiked,
     disLike,
-    getLike
+    getLike,
+    favorites
+
 }
 
-export default favoritesAPI
+export default favoritesAPI;
