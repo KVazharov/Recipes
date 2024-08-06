@@ -33,9 +33,6 @@ export default function Header() {
 							<nav>
 								<ul>
 									<li>
-										<Link to="#"> Hello, {username}</Link>
-									</li>
-									<li>
 										<Link to="/add-recipie">Add Recipe</Link>
 									</li>
 									<li>
@@ -43,6 +40,9 @@ export default function Header() {
 									</li>
 									<li>
 										<Link to="/my-recipes">My recipes</Link>
+									</li>
+									<li>
+										<Link to="#"> Hello, {username}</Link>
 									</li>
 									<li>
 										<Link to="/logout">Logout</Link>

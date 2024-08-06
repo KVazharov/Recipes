@@ -23,14 +23,14 @@ import ErrorBoundary from './components/ErrorBoundary'
 import Favorites from './components/favorites/Favorites'
 
 
+
 function App() {
 
 	return (
 		<>
-		<ErrorBoundary> 
+			<ErrorBoundary>
 				<AuthProvider  >
-					<Header/>
-					
+					<Header />
 					<main>
 						<Routes>
 							<Route path='/' element={<Home />} />
@@ -56,7 +56,7 @@ function App() {
 					</main>
 					<Footer />
 				</AuthProvider>
-				</ErrorBoundary>
+			</ErrorBoundary>
 		</>
 	)
 }

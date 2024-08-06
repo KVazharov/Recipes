@@ -5,6 +5,7 @@ import AuthContext from "../contexts/authContext";
 
 export default function useMyPecipes() {
     const [myRecipes, setMyRecipes] = useState([]);
+    const [error, setError] = useState(null);
     const { userId } = useContext(AuthContext)
     useEffect(() => {
 
@@ -15,10 +16,14 @@ export default function useMyPecipes() {
                 setMyRecipes(filtered);
 
             } catch (err) {
+                setError(err.statusText);
                 throw new Error('There was an error', err);
             }
         })();
     }, []);
 
-    return [myRecipes]
+    return [
+        myRecipes,
+        error
+    ]
 }

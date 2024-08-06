@@ -6,6 +6,7 @@ export default function useCategory(category) {
     const [isLoading, setIsLoading] = useState(true);
     const [recipes, setRecipes] = useState([]);
     const [capCategory, setCapCategory] = useState('');
+    const [error, setError] = useState(null);
     
 
     useEffect(() => {
@@ -17,8 +18,11 @@ export default function useCategory(category) {
                 setIsLoading(false);
 
             } catch (err) {
+                setError(err.statusText);
+                setIsLoading(false);
                 throw Error('Something went wrong!');
-            }
+                
+            } 
 
         })();
 
@@ -37,5 +41,6 @@ export default function useCategory(category) {
         recipes,
         capCategory,
         isLoading,
+        error
     ]
 }

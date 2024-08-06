@@ -46,7 +46,6 @@ export default function AddRecipie() {
 
     }, [addRecipieFormValues, isDisabled]);
 
-    console.log('add', errors);
     return (
         <div className="add-recipe" >
             <form className="add-form" onSubmit={formSubmitHandler}>

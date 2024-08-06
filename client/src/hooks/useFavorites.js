@@ -7,6 +7,7 @@ export default function useFavorites() {
     const { userId } = useContext(AuthContext);
     const [favorites, setFavorites] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         (async () => {
@@ -14,7 +15,10 @@ export default function useFavorites() {
                 const result = await favoritesAPI.favorites(userId);
                 convert(result);
                 setIsLoading(false);
+
             } catch (err) {
+                setError(err.statusText);
+                isLoading(false);
                 throw new Error('Something went wrong!');
             }
         })();
@@ -33,6 +37,7 @@ export default function useFavorites() {
 
     return [
         favorites,
-        isLoading
+        isLoading,
+        error
     ]
 }
