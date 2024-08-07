@@ -6,8 +6,11 @@ export default function Header() {
 
 	const { isAuthenticated, username } = useContext(AuthContext)
 	return (
-		<div>
+		<div className="wrapper">
 			<div className="site-header">
+				<Link to='/'> 
+					<img className="logo" src="../../../public/recipes-logo.jpg" alt="" />
+					</Link>
 				<div className="search">
 					<Link to="#">
 						<i className="fa-solid fa-magnifying-glass "></i>
